@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3, .text12, .text13{
+    color: #213E9D;
+}
+
+#head{
+    justify-content: center;
+}
+
+.mark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RED-LO{
+    font-size: 40px;
+}
+
+
+
+
+.text12{
+    font-size: 40px;
+    margin: 2rem;
+}
+
+.text13{
+    font-size: 50px;
+    margin: 4rem;
+}
+
+#section-1-1{
+    display: flex;
+    background-color: #BB7B2F;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.PERFIL1{
+    background-color: white;
+    padding: 1rem;
+}
+
+.PERFIL2{
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.OBJETIVO{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: white;
+    height: 500px;
+    justify-content: space-around;
+}
+
+.pe2323{
+    color: white;
+    text-decoration: underline;
+    margin: 2rem;
+}
+
+.INFORMACIÓN{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.caru{
+    margin: 2em;
+    background-color: #BB7B2F;
+    margin-bottom: 4rem;
+}
+
+  
+  .carousel-container {
+    width: 600px; /* Ajusta el ancho según tus necesidades */
+    overflow: hidden; /* Oculta los elementos fuera de la vista */
+    display: flex;
+    margin-bottom: 40px; /* Espacio entre los carruseles */
+    justify-content: center;
+  }
+
+
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 300px; /* Ajusta el ancho según el ancho de tus imágenes */
+    width: 300px; /* Aumentamos el tamaño de los items */
+    height: 350px; /* Aumentamos la altura de los items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-right: 40px; /* Espacio entre los items */
+  }
+
+  .carousel-item img{
+    border-radius: 20px;
+  }
+  
+  .carousel-item h3 {
+    font-size: 1.2rem; /* Aumentamos el tamaño del texto */
+    margin: 10px 0;
+  }
+  
+  .carousel-container img {
+    width: 100px; /* Hacemos las imágenes más grandes */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  #section-2-2{
+    background-color: white;
+    padding: 2rem;
+    display: none;
+  }
+
+  .INSTRUCTORES{
+    text-decoration: underline;
+    color: #213E9D;
+  }
+
+  .INSTRUCTORES1{
+    text-decoration: underline;
+    color: #213E9D;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+
+
+
+  .img-perfil img{
+    width: 500px;
+    height: 500px;
+
+}
+
+
+
+
+  
+
+
+
+  
+
+
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+
+    .carousel-item {
+        width: 250px;
+        height: 300px;
+      }
+      .carousel-item h3 {
+        font-size: 1rem;
+      }
+      .carousel-container img {
+        width: 200px;
+      }
+
+      .chat-container{
+        width: 300px;
+      }
+
+      #section-2-2{
+        padding: 0;
+      }
+
+    #head{
+        margin: 0;
+        padding: 5rem;
+        gap: 4rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .RED-LO{
+        margin: 0;
+    }
+
+    .INSTRUCTORES{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        margin-top: 3rem;
+    }
+
+    h1{
+        font-size: 75px;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    .IMG-MENTE{
+        background-image: url(img-pag/jpg/1.png);
+        background-size: cover cover;
+        height: 400px;
+        width: 100%;
+    }
+
+    .VIDEOS-MEN{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .VIDEOS-MEN img{
+        width: 60%;
+    }
+
+    .tecnólogos-1{
+        flex-direction: column;
+    }
+
+    .PREGUNTAS1{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .image-exito0, .image-exito00, .image-exito000{
+        padding: 0;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .datos-exito{
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 1rem;
+        width: 50%;
+    }
+
+    .te1{
+        align-content: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 20px;
+    }
+
+    .title-exitos{
+        margin: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    .foot{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 1rem;
+    }
+
+    .foot img{
+        width: 40px;
+        width: 40px;
+    }
+
+    .info-general-1{
+        flex-direction: column;
+    }
+
+    .info-general-2{
+        flex-direction: column-reverse;
+    }
+
+    .info-general-titulo{
+        font-size: 25px;
+    }
+    .info-general-titulo1{
+        font-size: 25px;
+    }
+    .info-general-titulo2{
+        font-size: 20px;
+    }
+
+    .info-general-izq{
+        display: flex;
+        width: 50%;
+        align-content: center;
+    }
+
+    .menu23{
+        display: none;
+    }
+
+    .card0, .card00, .card000, .card7, .card77, .card777 {
+        height: 200px;
+        transform: none;
+        transform: skew(350deg);
+    }
+
+    .Preguntas {
+        width: 350px;
+        max-width: 450;
+        min-width: 100px;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        border-radius: 5px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .NAME{
+        font-size: 30px;
+    }
+
+    .exito-avatar{
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+
+    .te1{
+        display: flex;
+        align-content: center;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .redes-exito{
+        padding: 0;
+        margin: 1rem;
+    }
+
+    .info-general-der{
+        margin: 0;
+    }
+    .EMPT{
+        display: flex;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+
+    .director{
+        flex-direction: column;
+    }
+    
+    .informacion{
+        flex-direction: column-reverse;
+    }
+
+    #backToHeader{
+        z-index: 1000;
+    }
+
+
+    .caru{
+        margin: 2px;
+        background-color: #DE985D;
+    }
+    }
+
+
+
+    @media only screen and (min-width: 0px) and (max-width: 500px) {
+
+        
+
+    .gallery{
+        width: 300px;
+        height: 200px;
+    }
+
+    .gallery img{
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .datos-exito{
+        width: 300px;
+    }
+
+    .image-exito0, .image-exito00, .image-exito000{
+        font-size: 100px;
+    }
+
+}
+
+    @media only screen and (min-width: 0px) and (max-width: 1200px) {
+        
+        #section-1-1{
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+
+
+        .img-perfil img{
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .OBJETIVO{
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .PERFIL1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .PERFIL2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .INFORMACIÓN{
+            flex-direction: column;
+        }
+
+
+
+        .AMBIENTES1, .AMBIENTES2 {
+            font-size: 50px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+          }
+        
+        
+        
+          /* Los botones de cambio de sección también deben ser más pequeños */
+          .CIR {
+            width: 40px;
+            height: 40px;
+          }
+        
+          .cir2 {
+            gap: 2rem;
+          }
+
+          .carousel-container {
+            width: 95%;
+          }
+        
+          .carousel1 {
+            gap: 3vw; /* Reducir el espacio entre los elementos en pantallas pequeñas */
+          }
+        
+          .card1 {
+            min-width: 70%; /* Las tarjetas serán más pequeñas en pantallas pequeñas */
+          }
+        
+          .name-int {
+            font-size: 1.5rem; /* Tamaño de fuente ajustado */
+            padding: 1rem; /* Menos espacio */
+          }
+        
+          .p-p-p {
+            padding: 1rem;
+          }
+        
+          .carousel-btn {
+            padding: 0.8rem;
+            font-size: 20px;
+          }
+
+          
+        }
+
+
+        
+
+    

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itsis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="Img/Logo color.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <style>
+        .menu23{
+    display: none;
+}
+
+#head{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img-pag/jpg/_V7A1827.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+    </style>
+
+
+    <header id="head">
+
+    <img src="Img/sena-logo.png" alt style="width: 100px; height: 100px;">
+
+<span class="RED-LO">
+    <h1>RED</h1>
+    <h2>DE LOGÍSTICA Y GESTIÓN EN LA PRODUCCIÓN</h2>
+</span>
+
+
+
+    </header>
+
+    <div class="menu23">
+        <button onclick="scrollToSection('section-1')">MENTE COLECTIVA</button>
+        <button onclick="scrollToSection('section-2')">NUESTROS PROGRAMAS</button>
+        <button onclick="scrollToSection('section-3')">SERVICIOS SENA</button>
+        <button onclick="scrollToSection('section-4')">PREGUNTAS FRECUENTES</button>
+        <button onclick="scrollToSection('section-5')">INFORMACIÓN GENERAL</button>
+      </div>
+
+    <button id="backToHeader" class="back-to-header">Volver arriba</button>
+
+    <div class="scroll-indicator">
+        <div class="arrow"></div>
+    </div>
+
+
+
+    <section id="section-1">
+<center>
+        <h3 class="title">MENTE COLECTIVA</h3>
+
+        
+        <figure class="IMG-MENTE">
+        </figure>
+
+<div class="VIDEOS-MEN">
+
+
+    <a href="https://youtu.be/6Ohr5AoBpDg?si=XW8giXNMUiO4vA1a"> <h2>documental</h2>
+    <img src="Img/placeholder-vid.png" alt style="border: solid 10px #BB7B2F; border-radius: 20px;"></a>
+
+    <a href="https://youtu.be/47cyEgICTj0?si=rSWBK__OTR2TulwF"> <h2>podcast</h2>
+    <img src="Img/placeholder-vid.png" alt style="border: solid 10px #BB7B2F; border-radius: 20px;"></a>
+
+
+</div>
+
+</center>
+
+<div class="gallery-container">
+    <button class="btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="gallery-wrapper">
+        <div class="gallery" id="gallery">
+
+            <!-- Copia de las últimas imágenes para transición infinita -->
+
+            <img src="img-pag/jpg/2U2A1915.jpg" alt="Imagen 1" alt style="border: solid 10px #BB7B2F; border-radius: 20px;">
+            <img src="img-pag/jpg/2U2A1919.jpg" alt="Imagen 2" alt style="border: solid 10px #BB7B2F; border-radius: 20px;">
+            <img src="img-pag/jpg/wmremove-transformed.png" alt="Imagen 3" alt style="border: solid 10px #BB7B2F; border-radius: 20px;">
+        </div>
+    </div>
+    <button class="btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+    </section>
+
+
+    
+    <section id="section-2">
+        <center>
+            <h3 class="title">NUESTROS PROGRAMAS</h3>
+    
+            <div class="tecnólogos">
+                <div>
+                    <h4>Tecnólogos</h4>
+                </div>
+    
+                <div class="tecnólogos-1">
+                    <span>
+                        <a href="Gestión-de-Producción-Industrial.html">
+        <img src="img-pag/jpg/2U2A1746.jpg" alt="Gestión de Producción Industrial" style="width: 300px; height: 300px; border-radius: 100%; border: solid 10px #BB7B2F; cursor: pointer;"></a>
+                        <p>Gestión de Producción Industrial</p>
+                    </span>
+                    <span>
+                        <a href="Gestión-logística.html">
+                        <img src="img-pag/jpg/2U2A1919.jpg" alt="Gestión Logística" style="width: 300px; height: 300px; border-radius: 100%; border: solid 10px #BB7B2F; cursor: pointer;"></a>
+                        <p>Gestión Logística</p>
+                    </span>
+                    <span>
+                        <a href="Gestion-integrada-de-la-calidad,-medio-ambiente,-seguridad-y-salud-ocupacional.html">
+                        <img src="img-pag/jpg/2U2A1921.jpg" alt="HSEQ" style="width: 300px; height: 300px; border-radius: 100%; border: solid 10px #BB7B2F; cursor: pointer;"></a>
+                        <p>HSEQ</p>
+                    </span>
+                </div>
+            </div>
+    
+            <div>
+                <h4>Tecnicos</h4>
+            </div>
+    
+            <div class="tecnólogos-1">
+                <span>
+                    <a href="Integración-de-Operaciones-logísticas.html">
+                    <img src="img-pag/jpg/2U2A1910.jpg" alt="Integración de operaciones lingísticas" style="width: 300px; height: 300px; border-radius: 100%; border: solid 10px #BB7B2F; cursor: pointer;"></a>
+                    <p>Integración de operaciones linguísticas</p>
+                </span>
+            </div>
+    
+        </center>
+    </section>
+    
+
+
+
+
+
+    <section id="section-3">
+
+<center>
+        <h3 class="title">SERVICIOS SENA</h3></center>
+
+
+        <h4 class="EMPT">Emprendimiento</h4>
+
+        <div class="container">
+
+            <div class="card0">
+                <div class="card-header">Título</div>
+                <div class="card-footer" onclick="toggleMenu(0)">
+                    <span id="toggle-text-0">Ver más</span><span id="close-icon-0" class="close" style="display: none;"> X</span>
+                </div>
+            </div>
+
+            <div class="card00">
+                <div class="card-header">Título</div>
+                <div class="card-footer" onclick="toggleMenu(1)">
+                    <span id="toggle-text-1">Ver más</span><span id="close-icon-1" class="close" style="display: none;"> X</span>
+                </div>
+            </div>
+
+            <div class="card000">
+                <div class="card-header">Título</div>
+                <div class="card-footer" onclick="toggleMenu(2)">
+                    <span id="toggle-text-2">Ver más</span><span id="close-icon-2" class="close" style="display: none;"> X</span>
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="card-header">Título</div>
+                <div class="card-footer" onclick="toggleMenu(3)">
+                    <span id="toggle-text-3">Ver más</span><span id="close-icon-3" class="close" style="display: none;"> X</span>
+                </div>
+            </div>
+
+        </div>
+
+
+<center>
+
+                <!-- inicio menus -->
+        <div class="menuk" id="menu0">
+            <div class="menu-exito-emp">
+                <div class="te1">
+                    <h2 class="title-exitos">EXITOS EMPRENDER</h2>
+                </div>
+                <center>
+                    <div class="image-exito0">
+                        <h2 class="NAME">DETALLITOS HONEY</h2>
+                    </div>
+                </center>
+                <center>
+                <span class="datos-exito">
+                    <img class="exito-avatar" src="Fotos/Plp1.jpeg" alt>
+                    <span>
+                            <h2 class="nombre-exito">Karol Natalie Jimenez</h2>                       
+                        <p>Detalles personalizados para sorprender a esa persona 
+                            especial, como ramos die rosas eternas con peluches, perfectos para transmitir
+                             emociones y crear recuendos duraderos. Compices s la búsqueda del regalo perfecto</p></center>
+                    </span>
+                </span>
+        
+                <span class="redes-exito">
+                    <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                </span>
+            </div>
+        </div>
+                        <!-- se repite para cada menu -->
+
+                                        <!-- inicio menus -->
+        <div class="menuk" id="menu1">
+            <div class="menu-exito-emp">
+                <div class="te1">
+                    <h2 class="title-exitos">EXITOS EMPRENDER</h2>
+                </div>
+                <center>
+                    <div class="image-exito00">
+                        <h2 class="NAME">LAU GOOKIES</h2>
+                    </div>
+                </center>
+                <center>
+                <span class="datos-exito">
+                    <img class="exito-avatar" src="Fotos/Plp.jpeg">
+                    <span>                        
+                            <h2 class="nombre-exito">Laura Catalina Gómez Arenas</h2>                        
+                        <p>Deliciosas galletas rellenas con cremosas combinaciones de Nutella 
+                            y Nucita, de sabores irresistibles como Red Velvet, M&M 
+                            y Oreo. Es una experiencia de indulgencia con un toque gourmet, ideal para 
+                            quienes buscan un antojo diferente y exclusivo.</p></center>
+                    </span>
+                </span>
+        
+                <span class="redes-exito">
+                    <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                </span>
+            </div>
+        </div>
+                        <!-- se repite para cada menu -->
+
+                                        <!-- inicio menus -->
+        <div class="menuk" id="menu2">
+            <div class="menu-exito-emp">
+                <div class="te1">
+                    <h2 class="title-exitos">EXITOS EMPRENDER</h2>
+                </div>
+                <center>
+                    <div class="image-exito000">
+                        <h2 class="NAME">LA CHOCOLATERA</h2>
+                    </div>
+                </center>
+                <center>
+                <span class="datos-exito">
+                    <img class="exito-avatar" src="Fotos/Plp2.jpeg" alt>
+                    <span>                       
+                            <h2 class="nombre-exito">Valeria Montaño Romero</h2>                        
+                        <p>Es un punto movil de antojos donde se combina lo clásico con lo 
+                            irresistible. Se ofrecen fresas cubiertas con chocolate y deliciosas obleas.
+                             Con ingredientes de calidad y una presentación tentadora, el objetivo es endulzar 
+                             cada momento con un toque especial.</p></center>
+                    </span>
+                </span>
+        
+                <span class="redes-exito">
+                    <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                </span>
+            </div>
+        </div>
+                        <!-- se repite para cada menu -->
+
+                                        <!-- inicio menus -->
+        <div class="menuk" id="menu3">
+            <div class="menu-exito-emp">
+                <div class="te1">
+                    <h2 class="title-exitos">EXITOS EMPRENDER</h2>
+                </div>
+                <center>
+                    <div class="image-exito">
+                        <h2 class="NAME">NOMBRE EMPRENDIMIENTO</h2>
+                    </div>
+                </center>
+                <center>
+                <span class="datos-exito">
+                    <img class="exito-avatar" src="Img/placeholder-character.webp" alt>
+                    <span>                        
+                            <h2 class="nombre-exito">Nombre de la Persona</h2>                       
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque 
+                            exercitationem temporibus velit saepe, maxime eum deleniti! 
+                            Saepe libero repellendus nisi aliquam corporis nihil facilis corrupti
+                            nam. Quae quisquam id nostrum.</p></center>
+                    </span>
+                </span>
+        
+                <span class="redes-exito">
+                    <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+                    <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+                </span>
+            </div>
+        </div>
+                        <!-- se repite para cada menu -->
+                    </center>
+    </section>
+
+
+
+
+    <section id="section-4">
+
+        <div>
+        <center>
+            <h3 class="title">PREGUNTAS FRECUENTES</h3></center>
+</div>
+
+<div class="PREGUNTAS1">
+
+            <div>
+
+                <span>
+                    <div class="Preguntas">
+                        <h3 class="Preguntas-texto">Pregunta 1</h3>
+                        <div class="menu-respuestas">
+                            <div class="respuesta">
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo574:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo575:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Respuestas"></textarea>
+                    </div>
+                    <!-- Repetir para otras preguntas -->
+                </span>
+                <span>
+                    <div class="Preguntas">
+                        <h3 class="Preguntas-texto">Pregunta 2</h3>
+                        <div class="menu-respuestas">
+                            <div class="respuesta">
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo576:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo577:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Respuestas"></textarea>
+                    </div>
+                    <!-- Repetir para otras preguntas -->
+                </span>
+        
+                <span>
+                    <div class="Preguntas">
+                        <h3 class="Preguntas-texto">Pregunta 3</h3>
+                        <div class="menu-respuestas">
+                            <div class="respuesta">
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo576:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo577:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Respuestas"></textarea>
+                    </div>
+                    <!-- Repetir para otras preguntas -->
+                </span>
+        
+            </div> <div>
+        
+                <span>
+                    <div class="Preguntas">
+                        <h3 class="Preguntas-texto">Pregunta 4</h3>
+                        <div class="menu-respuestas">
+                            <div class="respuesta">
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo576:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo577:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Respuestas"></textarea>
+                    </div>
+                    <!-- Repetir para otras preguntas -->
+                </span>
+        
+                <span>
+                    <div class="Preguntas">
+                        <h3 class="Preguntas-texto">Pregunta 5</h3>
+                        <div class="menu-respuestas">
+                            <div class="respuesta">
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo576:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo577:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Respuestas"></textarea>
+                    </div>
+                    <!-- Repetir para otras preguntas -->
+                </span>
+        
+                <span>
+                    <div class="Preguntas">
+                        <h3 class="Preguntas-texto">Pregunta 6</h3>
+                        <div class="menu-respuestas">
+                            <div class="respuesta">
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo576:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                                <span class="user-respuesta">
+                                    <h4 class="user">anonimo577:</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <textarea placeholder="Respuestas"></textarea>
+                    </div>
+                    <!-- Repetir para otras preguntas -->
+                </span>
+        
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="section-5">
+<center>
+    <h3 class="title">INFORMACIÓN GENERAL</h3>
+</center>
+
+
+
+<div class="section-5-parte-2">
+
+<div class="director">
+
+    <div class="info-general-1">
+        <center>
+            <div class="info-general-izq">
+                <img src="img-pag/WhatsApp Image 2025-03-26 at 11.52.05.jpeg" alt style="width: 100%;">
+            </div>
+        </center>
+    </div>
+<center>
+    <div class="info-general-der">
+        <h4 class="info-general-titulo1">SUBDIRECTOR </h4>
+        <h4 class="info-general-titulo2">JAVIER RICARDO JIMENEZ RINCON </h4>
+        <p>Médico Veterinario con especializaciones en Gerencia de 
+            Empresas Agropecuarias y Agronegocios. Actualmente, es Subdirector 
+            del Centro de Desarrollo Agroempresarial de Chía, donde lidera 
+            iniciativas para el desarrollo del sector agroempresarial.</p>
+    </div>
+</center>
+
+</div>
+<div class="informacion">
+
+
+<center>
+    <div class="info-general-der">
+        <h4 class="info-general-titulo">INFORMACIÓN</h4>
+        <p> <b>Dirección:</b> Cl. 25 #11-135, Chía, Cundinamarca <br>
+            <b>Horario de atención:</b> Lunes a
+            Viernes 7:00 am a 7:00 pm -
+            Sábados 8:00 am a 1:00 pm <br>
+           <b>Teléfono:</b>  18844545</p>
+    </div>
+</center>
+
+<div class="info-general-2">
+    <center>
+        <div class="info-general-izq">
+            <img src="img-pag/WhatsApp Image 2025-03-26 at 11.24.36 (1).jpeg" alt style="width: 100%;">
+        </div>
+    </center>
+</div>
+
+</div>
+
+</div>
+
+<div class="redes-1">
+    <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/x-twitter-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+</div>
+
+
+
+
+    </section>
+
+
+
+
+    <footer id="foot">
+        <center>
+            <h3 class="title">REDES</h3>
+        </center>
+
+
+<div class="foot">
+        <div class="foot">
+            <img src="Img/location-dot-solid.svg" alt style="width: 80px; height: 80px;">
+            <p>Calle 25, Chia, Cundinamarca, Colombia</p>
+        </div>
+
+        <div class="foot">
+            <img src="Img/phone-solid.svg" alt style="width: 80px; height: 80px;">
+            <p>(+57) 3195749702 <br>
+                (+57) 3224358463</p>
+        </div>
+</div>    
+
+        <div class="redes-1">
+    <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/x-twitter-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+    <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+        </div>
+
+    </footer>
+
+
+<!-- Botón flotante para abrir el chatbot -->
+<button id="chat-btn" class="chat-btn">
+    <img src="Img/chatbot.png" alt="Chatbot Icon">
+</button>
+
+<!-- Chatbot -->
+<div class="chat-container" id="chat-container">
+    <div class="faq-section">
+        <h4>Preguntas Frecuentes</h4>
+        <ul id="faq-list">
+            <li class="faq-item" data-question="¿Qué programas brindan?">¿Qué programas brindan?</li>
+            <li class="faq-item" data-question="¿Cuándo son las convocatorias?">¿Cuándo son las convocatorias?</li>
+            <li class="faq-item" data-question="¿Cuál es el cronograma?">¿Cuál es el cronograma?</li>
+            <li class="faq-item" data-question="¿Cómo inscribirse?">¿Cómo inscribirse?</li>
+            <li class="faq-item" data-question="¿Qué necesito para poder inscribirme?">¿Qué necesito para poder inscribirme?</li>
+        </ul>
+    </div>
+    <!-- Botón para limpiar el chat -->
+    <button id="clear-chat-btn" class="clear-chat-btn">Limpiar chat</button>
+    
+    <div class="chat-box" id="chat-box">
+        <!-- Aquí se mostrarán los mensajes -->
+    </div>
+    <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+    <button id="send-btn">Enviar</button>
+</div>
+
+
+
+
+
+<script src="chatbot.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>

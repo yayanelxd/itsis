@@ -1,0 +1,876 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: KODE;
+    src: url(font/Kode_Mono/KodeMono-VariableFont_wght.ttf);
+}
+
+@font-face{
+    font-family: CONSOLAS;
+    src: url(font/consolas-bold_freefontdownload_org/);
+}
+
+@font-face{
+    font-family: CALIBRI;
+    src: url(font/calibri-regular_freefontdownload_org/);
+}
+
+
+h1, h2 {
+    font-family: KODE;
+    
+}
+
+h3, h4, button, li, textarea, .card-footer, .card-header, .user {
+    font-family: CONSOLAS;
+}
+
+p, .bot{
+    font-family: CALIBRI;
+}
+
+
+
+
+
+body{
+    margin: 0;
+}
+
+
+#head{
+    background-color: #213E9D;
+    color: white;
+    font-size: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 600px;
+}
+
+
+/* Contenedor de la flecha */
+.scroll-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* Estilos para la flecha */
+.arrow {
+    width: 30px;
+    height: 30px;
+    border-left: 5px solid #333;
+    border-bottom: 5px solid #333;
+    animation: bounce 1s infinite;
+    transform: rotate(315deg);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Animación de rebote para la flecha */
+@keyframes bounce {
+    0%, 100% {
+        transform: rotate(315deg) translateY(0);
+    }
+    50% {
+        transform: rotate(315deg) translateX(10px);
+    }
+
+
+    50% {
+        transform: rotate(315deg) translateY(10px);
+    }
+}
+
+
+
+
+h1{
+    font-size: 150px;
+}
+
+
+h2{
+    font-size: 80px;
+}
+
+
+/* Estilos para el botón de volver al header */
+.back-to-header {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #213E9D;
+    color: #fff;
+    border: solid 1px black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+    z-index: 1000000;
+}
+
+
+.back-to-header:hover {
+    background-color:#556dbd;
+    transition: ease 0.5s;
+}
+
+
+
+
+p{
+    margin: 1rem;
+}
+
+
+
+
+
+
+.RED-LO{
+    margin: 2em;
+}
+
+
+.title{
+    padding: 1rem;
+    background-color: #213E9D;
+    color: white;
+    font-size: 40px;
+}
+
+
+.IMG-MENTE{
+    background-image: url(img-pag/jpg/1.png);
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;       /* Evita que la imagen se repita */
+    background-size: cover; 
+    height: 840px;
+}
+
+
+.VIDEOS-MEN{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 5rem;
+}
+
+.card1{
+    display: none;
+}
+
+
+
+
+
+
+
+
+        .gallery-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3rem;
+            margin-top: 3rem;
+        }
+        .gallery-wrapper {
+            overflow: hidden;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: max-content;
+        }
+        .gallery img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+            margin: 0 5px;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 10;
+        }
+        .prev { left: 0; }
+        .next { right: 0; }
+  
+
+
+h4{
+    font-size: 50px;
+    text-decoration: underline;
+    color: #213E9D;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+.EMPT{
+    font-size: 50px;
+    text-decoration: underline;
+    color: #213E9D;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+}
+
+
+.tecnólogos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.tecnólogos-1{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    gap: 5rem;
+    font-size: 20px;
+    color: #213E9D;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+
+
+.card0 {
+    width: 100%;
+    height: 400px;
+    background-image: url(Fotos/Emp1.0.jpg);
+    background-size: cover;
+    transform: skew(-10deg);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card00 {
+    width: 100%;
+    height: 400px;
+    background-image: url(Fotos/Emp2.jpeg);
+    background-size: cover;
+    align-content: center;
+    transform: skew(-10deg);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card000 {
+    width: 100%;
+    height: 400px;
+    background-image: url(Fotos/Emp3.0.jpeg);
+    background-size: cover;
+    transform: skew(-10deg);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.card-header, .card-footer {
+    background-color: #213E9D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.card-footer {
+    cursor: pointer;
+}
+
+
+.card-footer:hover{
+    background-color: #556dbd;
+    transition: ease 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.image-exito0{
+    width: 80%;
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;       /* Evita que la imagen se repita */
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(Fotos/Emp1.jpg);
+    padding: 20em;
+}
+
+.image-exito00{
+    width: 80%;
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;       /* Evita que la imagen se repita */
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(Fotos/Emp3.jpeg);
+    padding: 20em;
+}
+
+.image-exito000{
+    width: 80%;
+    background-position: center center;  /* Centra la imagen */
+    background-repeat: no-repeat;       /* Evita que la imagen se repita */
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(Fotos/Emp2.jpeg);
+    padding: 20em;
+}
+
+
+.te1{
+    display: flex;
+    align-content: center;
+    margin-left: 10%;
+    margin-top: 1rem ;
+    margin-bottom: 1rem ;
+}
+
+
+.title-exitos{
+    background-color: #213E9D;
+    color: white;
+    border-radius: 10px;
+    width: 70%;
+}
+
+
+.NAME{
+    color: white;
+    font-size: 80px;
+}
+
+
+
+
+
+
+
+.nombre-exito{
+    font-size: 30px;
+    margin: 1em;
+}
+
+
+.datos-exito{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: white;
+    border-top-left-radius:5000px;
+    border-bottom-left-radius: 5000px;
+    margin: 2rem;
+    width: 80%;
+}
+
+
+.exito-avatar{
+    border-radius: 100%;
+    margin: 2em;
+    width: 400px;
+    height: 400px;
+}
+
+
+.redes-exito{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.menuk {
+    display: none; /* Initially hidden */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    z-index: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #BB7B2F;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+
+.close {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+#section-4 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color: #213E9D;
+}
+
+
+
+
+.PREGUNTAS1{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+
+
+textarea {
+    width: 100%;
+    min-height: 2.5em;
+    max-height: 200px; 
+    padding: 1.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #213E9D;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    resize: none; 
+    overflow-y: hidden; 
+}
+
+
+textarea::placeholder {
+    color: white;
+}
+
+
+.Preguntas {
+    background-color: #BB7B2F;
+    width: 500px;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    border-radius: 5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+
+.Preguntas-texto {
+    margin-bottom: 2em;
+    padding-left: 0.8em;
+    cursor: pointer;
+    color: black;
+}
+
+
+.Preguntas-texto:hover{
+    color: #4b4b4b;
+    transition: ease 0.5s;
+}
+
+
+/* Estilos del menú de respuestas */
+.menu-respuestas {
+    background-color: #BB7B2F;
+    padding: 1em;
+    display: none;
+    transition: max-height 0.3s ease-out; /* Suaviza el deslizamiento */
+}
+
+
+
+
+
+
+.user {
+    color: #BB7B2F;
+    font-size: 30px;
+    margin-top: 0.2rem;
+    margin-right: 0.2rem;
+    margin-left: none;
+    margin-right: none;
+}
+
+
+.user-respuesta {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1em;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+
+/* Clase para mostrar el menú */
+.menu-respuestas.open {
+    display: block;
+    max-height: 800px; /* Ajusta el valor según el contenido */
+}
+
+
+.section-5-parte-2{
+    margin: 2rem;
+
+
+}
+
+
+.director{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+
+.informacion{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+
+.info-general-titulo{
+    font-size: 50px;
+    text-decoration: underline;
+    color: #213E9C;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+.info-general-titulo1{
+    font-size: 50px;
+    text-decoration: underline;
+    color: #213E9D;
+    margin-bottom: 0;
+    margin-top: 1em;
+}
+
+
+.info-general-titulo2{
+    font-size: 20px;
+    text-decoration: none;
+    color: #213E9D;
+    margin-bottom: 48px;
+    margin-top: 0;
+}
+
+
+
+
+.info-general-1{
+    display: flex;
+}
+
+
+.info-general-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.info-general-izq{
+    width: 100%;
+    width: 500px; /* Ajusta según sea necesario */
+    display: inline-block;
+}
+
+
+
+
+.info-general-der{
+    width: 100%;
+    margin: 1em;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.redes-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+
+#foot{
+    background-color: #BB7B2F;
+}
+
+
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+
+p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* Estilos para el menú flotante */
+.menu23 {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    border-radius: 10px;
+    gap: 40px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu23 button {
+    background-color: #213E9D;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease; /* Transición suave al cambiar el tamaño */
+  }
+
+
+  .menu23 button:hover{
+    background-color: #556dbd;
+    transition: ease 0.5s;
+  }
+  
+  /* Estilo para el botón activo (cuando se hace scroll a la sección) */
+.menu23 button.active {
+    transform: scale(1.2); /* Hace que el botón crezca un 20% */
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Estilo del botón flotante */
+.chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    z-index: 1000;
+    border: solid 2px black;
+}
+
+.chat-btn:hover{
+    transition: ease 0.8s;
+    background-color: #e53935;
+}
+
+
+.chat-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Estilo del chatbot */
+.chat-container {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none; /* Ocultar el chatbot al principio */
+    flex-direction: column;
+    height: 600px;
+    z-index: 1000;
+    gap: 3rem;
+}
+
+
+/* Sección de preguntas frecuentes */
+.faq-section {
+    margin-bottom: 15px;
+}
+
+
+.faq-section h4 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.faq-item {
+    font-size: 14px;
+    color: #213E9D;
+    cursor: pointer;
+    margin: 5px 0;
+    list-style: none;
+}
+
+
+.faq-item:hover {
+    text-decoration: underline;
+}
+
+
+.chat-box {
+    flex-grow: 1;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+
+#user-input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+#send-btn {
+    padding: 10px 15px;
+    background-color: #213E9D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#send-btn:hover {
+    background-color: #556dbd;
+}
+
+
+.clear-chat-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+.clear-chat-btn:hover {
+    background-color: #e53935;
+}

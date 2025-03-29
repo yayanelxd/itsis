@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion logística</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="Img/Logo color.png" type="image/x-icon">
+</head>
+<body>
+
+  <button id="backToHeader" class="back-to-header">Volver arriba</button>
+
+  <style>
+    body{
+      background-color: #BB7B2F;
+    }
+    #head{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img-pag/jpg/2U2A1919.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+  </style>
+
+    <header id="head">
+
+        <img src="Img/sena-logo.png" alt style="width: 100px; height: 100px;">
+    
+    <span class="RED-LO">
+        <h1>GESTIÓN</h1>
+        <h2>LOGÍSTICA</h2>
+    </span>
+    
+        </header>
+        <div class="scroll-indicator">
+          <div class="arrow"></div>
+      </div>
+
+        <section id="section-1-1">
+
+            <div class="PERFIL1">
+
+            <figure class="img-perfil">
+                <img src="img-pag/jpg/2U2A1829.jpg">
+            </figure>
+
+            <h2 class="text12">PERFIL OCUPACIONAL</h2> 
+
+            </div>
+
+            <div class="PERFIL2">
+
+                <span class="OBJETIVO">
+                <h1 class="text13">OBJETIVO</h1>
+                <p>Es un programa diseñado para optimizar y 
+                  coordinar eficientemente las operaciones logísticas, desde la planificación hasta la entrega 
+                  final, mejorando la eficiencia y satisfacción del cliente. Permite liderar equipos y procesos de 
+                  manera efectiva.</p></span>
+
+
+
+                     
+
+<div>
+                       
+    <h2 class="pe2323">INFORMACIÓN</h2>
+<div class="INFORMACIÓN">
+
+
+
+
+    <span class="mark"><img src="Img/bookmark-solid.svg" alt style="width: 100px; height: 100px;">
+                        <p> <b>Programa:</b>
+                            Gestión Logística</p></span>
+    <span class="mark"><img src="Img/circle-check-solid.svg" alt style="width: 100px; height: 100px;">
+                        <p> <b>Requisitos:</b> Titulo Bachiller Académico</p></span>
+    <span class="mark"><img src="Img/clock-solid.svg" alt style="width: 100px; height: 100px;">
+                        <p> <b>Duración:</b> 24 Meses
+                        </p></span>
+    <span class="mark"><img src="Img/circle-info-solid.svg" alt style="width: 100px; height: 100px;">
+                        <p> <b>Nivel De Formación:</b> Nivel Tecnológico</p></span>
+    <span class="mark"><img src="Img/address-book-solid.svg" alt style="width: 100px; height: 100px;">
+                        <p> <b>Modalidad:</b> Presencial y/o Virtual</p></span>
+
+                     </div>
+
+            </div>
+
+        </div>
+
+
+        </section>
+    
+<center> 
+        <section class="caru">
+            <!-- Primer carrusel -->
+            <div class="carousel-container">
+              <div class="carousel-items" id="carousel-1">
+                <div class="carousel-item">
+                  <h3>Coordinador de procesos logísticos.</h3>
+                  <img src="img-pag/jpg/2U2A1829.jpg" alt style="width: 200px; height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <h3>Coordinador de procesos logísticos.</h3>
+                  <img src="img-pag/jpg/2U2A1919.jpg" alt style="width: 200px; height: 200px;">
+                </div>  
+              </div>
+            </div>
+          
+            <!-- Segundo carrusel -->
+            <div class="carousel-container">
+              <div class="carousel-items" id="carousel-2">
+                <div class="carousel-item">
+                  <h3>Supervisor de operaciones de transporte terrestre</h3>
+                  <img src="img-pag/jpg/2U2A1782.jpg" alt style="width: 200px; height: 200px;">
+                </div>
+                <div class="carousel-item">
+                  <h3>Auxiliar de ventas y operaciones.</h3>
+                  <img src="img-pag/jpg/2U2A1830.jpg" alt style="width: 200px; height: 200px;">
+                </div>
+              </div>
+            </div>
+          </section>
+</center>
+
+<script>
+  function autoSlide(carouselId) {
+      const carousel = document.getElementById(carouselId);
+      const items = carousel.querySelectorAll('.carousel-item');
+      let index = 0;
+      const itemWidth = items[0].offsetWidth + 20; // Ancho del item + margen
+
+      setInterval(() => {
+          index = (index + 1) % items.length;
+          carousel.style.transform = `translateX(-${index * itemWidth}px)`;
+      }, 3000);
+  }
+
+  autoSlide('carousel-1');
+  autoSlide('carousel-2');
+</script>
+
+
+          
+
+
+
+          
+          
+                    
+
+
+        
+<!-- Botón flotante para abrir el chatbot -->
+<button id="chat-btn" class="chat-btn">
+  <img src="Img/chatbot.png" alt="Chatbot Icon">
+</button>
+
+<!-- Chatbot -->
+<div class="chat-container" id="chat-container">
+  <div class="faq-section">
+      <h4>Preguntas Frecuentes</h4>
+      <ul id="faq-list">
+          <li class="faq-item" data-question="¿Qué programas brindan?">¿Qué programas brindan?</li>
+          <li class="faq-item" data-question="¿Cuándo son las convocatorias?">¿Cuándo son las convocatorias?</li>
+          <li class="faq-item" data-question="¿Cuál es el cronograma?">¿Cuál es el cronograma?</li>
+          <li class="faq-item" data-question="¿Cómo inscribirse?">¿Cómo inscribirse?</li>
+          <li class="faq-item" data-question="¿Qué necesito para poder inscribirme?">¿Qué necesito para poder inscribirme?</li>
+      </ul>
+  </div>
+  <!-- Botón para limpiar el chat -->
+  <button id="clear-chat-btn" class="clear-chat-btn">Limpiar chat</button>
+  
+  <div class="chat-box" id="chat-box">
+      <!-- Aquí se mostrarán los mensajes -->
+  </div>
+  <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+  <button id="send-btn">Enviar</button>
+</div>
+
+
+<script src="chatbot.js"></script>
+
+
+        <script>
+          // Mostrar el botón de "Volver al Header" cuando el usuario se desplace
+window.onscroll = function() {
+    var button = document.getElementById("backToHeader");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+};
+
+// Función para regresar al header al hacer clic en el botón
+document.getElementById("backToHeader").onclick = function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+        </script>
+
+
+
+
+
+
+
+<footer id="foot">
+  <center>
+      <h3 class="title">REDES</h3>
+  </center>
+
+
+<div class="foot">
+  <div class="foot">
+      <img src="Img/location-dot-solid.svg" alt style="width: 80px; height: 80px;">
+      <p>Calle 25, Chia, Cundinamarca, Colombia</p>
+  </div>
+
+  <div class="foot">
+      <img src="Img/phone-solid.svg" alt style="width: 80px; height: 80px;">
+      <p>(+57) 3195749702 <br>
+          (+57) 3224358463</p>
+  </div>
+</div>    
+
+  <div class="redes-1">
+      <img src="Img/facebook-brands-solid.svg" alt style="width: 60px; height: 60px;">
+      <img src="Img/instagram-brands-solid.svg" alt style="width: 60px; height: 60px;">
+      <img src="Img/x-twitter-brands-solid.svg" alt style="width: 60px; height: 60px;">
+      <img src="Img/whatsapp-brands-solid.svg" alt style="width: 60px; height: 60px;">
+      <img src="Img/tiktok-brands.svg" alt style="width: 60px; height: 60px;">
+  </div>
+
+</footer>
+
+
+
+
+
+        <script>
+          
+// Función para mostrar/ocultar el menú
+function toggleMenu(menuIndex) {
+    const menus = document.querySelectorAll('.menuk');
+    const currentMenu = document.getElementById(`menu${menuIndex}`);
+    const toggleText = document.getElementById(`toggle-text-${menuIndex}`);
+    const closeIcon = document.getElementById(`close-icon-${menuIndex}`);
+    
+    // Primero cerramos todos los menús y volvemos a poner "Ver más" y ocultar "X" en ellos
+    menus.forEach((menu, index) => {
+        if (index !== menuIndex) {
+            menu.style.display = 'none';  // Cerrar menú
+            document.getElementById(`toggle-text-${index}`).textContent = 'Ver más';  // Poner 'Ver más'
+            document.getElementById(`close-icon-${index}`).style.display = 'none';  // Ocultar 'X'
+        }
+    });
+
+    // Verificar si el menú está visible
+    if (currentMenu.style.display === 'flex') {
+        // Si el menú está visible, lo cerramos
+        currentMenu.style.display = 'none';
+        toggleText.textContent = 'Ver más'; // Cambiar el texto a 'Ver más'
+        closeIcon.style.display = 'none'; // Ocultar la 'X'
+    } else {
+        // Si el menú no está visible, lo mostramos
+        currentMenu.style.display = 'flex';
+        toggleText.textContent = 'Cerrar'; // Cambiar el texto a 'Cerrar'
+        closeIcon.style.display = 'inline'; // Mostrar la 'X'
+    }
+}
+        </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
